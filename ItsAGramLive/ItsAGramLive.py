@@ -6,7 +6,6 @@ import time
 import urllib
 import uuid
 
-import pyperclip
 import requests
 # Turn off InsecureRequestWarning
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -342,7 +341,6 @@ class ItsAGramLive:
             self.stream_server = upload_url[0]
             self.stream_key = "{}{}".format(str(self.broadcast_id), upload_url[1])
 
-            pyperclip.copy(self.stream_key)
 
             return True
 
